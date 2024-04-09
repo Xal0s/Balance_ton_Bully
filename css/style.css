@@ -1,0 +1,392 @@
+*{
+    font-family: "Roboto";
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* css header-navbar */
+.perso_logoSize{
+    width: 180px;
+    background-color: #A42AF0;
+    padding: 3px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s, box-shadow 0.5s, filter 0.5s ease-in-out;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/* Effet de surbrillance et de transformation 3D au survol */
+.perso_logoSize:hover {
+    transform: scale(1.01);
+}
+
+/* Style pour centrer le logo dans sa colonne */
+.col-12.col-md-auto.p-2.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connexion-home {
+    height: auto;
+}
+
+.connexion-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 2px;
+    color: #000;
+}
+
+
+.connexion-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.connexion-logo {
+    width: 50px;
+    height: auto;
+}
+
+/* Style pour le bouton 'Votre profil' */
+.deconnexion-btn {
+    background-color: #850000;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 10px;
+    margin: 5px;
+    color: #fff;
+    box-shadow: 0px 5px 0px 0px #690000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    text-decoration: none;
+}
+
+.deconnexion-btn:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px #690000;
+}
+
+.deconnexion-btn:hover {
+    filter: brightness(110%);
+}
+
+
+/* Style pour le bouton 'Déconnexion' */
+.profil-btn {
+    background-color: #0854C7;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 10px;
+    margin: 5px;
+    color: #fff;
+    box-shadow: 0px 5px 0px 0px #00328E;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    text-decoration: none;
+}
+
+.profil-btn:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px #00328E;
+}
+
+.profil-btn:hover {
+    filter: brightness(110%);
+}
+
+
+
+header a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+header a:hover{
+    text-decoration: underline;
+    transition: 1s;
+}
+
+
+/* css accueil */
+.container-stats{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.statistiques{
+    grid-column: 2/ span 2;
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    align-items: center;
+}
+
+.first-percent, .second-percent{
+    font-size: 5rem;
+    margin-top: 30px;
+}
+
+.harassment, .high-school-harassment{
+    font-size: 2rem;
+    max-width: 300px;
+}
+
+.video-container{
+    grid-column: 4/ span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    width: 100%;
+    height: 360px;
+}
+
+.transition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background: #52B5EF;
+    border-radius: 13px;
+    margin-bottom: 100px;
+}
+
+.solutions{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 10%;
+}
+
+.first-solution{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.second-solution{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.illustrations{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustrations img{
+    max-width: 130px;
+
+}
+
+.third-solution{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.fourth-solution{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+
+.content {
+    border-radius: 5px;
+    width: 70vw;
+    padding: 3em;
+    position: relative;
+    max-width: 600px;
+}
+
+.search-bar {
+    --size: 60px;
+    border: 2px solid #A42AF0;
+    display: flex;
+    border-radius: 50px;
+    height: var(--size);
+    padding: 3px;
+    width: var(--size);
+    position: relative;
+    transition: width 300ms cubic-bezier(.18,.89,.32,1.10);
+    overflow: hidden;
+}
+
+.search-bar__input {
+    /*display: none;*/
+    color: #333;
+    background: transparent;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding: 0 2em;
+    border: 0;
+    position: relative;
+    line-height: calc(var(--size) - 0px);
+    cursor: text;
+}
+
+.show-search {
+    display: block;
+}
+
+.search-bar__submit {
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0;
+    background: #A42AF0;
+    color: white;
+    border-radius: 50%;
+    width: calc(var(--size) - 6px);
+    height: calc(var(--size) - 6px);
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 150ms ease-in-out;
+}
+
+.search-bar__submit:hover {
+    filter: brightness(1.2);
+}
+
+.search-bar:focus-within {
+    width: 100%;
+}
+
+.search-bar__submit {
+    background: #A42AF0;
+    color: white;
+}
+
+.search-bar__submit:focus,
+.search-bar__submit:hover {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+}
+
+
+.nav-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: transform 0.5s, box-shadow 0.5s;
+    transform: perspective(500px) rotateY(0deg);
+    transform-origin: center;
+    will-change: transform;
+}
+.nav-item {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.nav-item:hover {
+    transform: perspective(500px) rotateY(15deg);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    text-decoration: none;
+}
+
+/* Masque le menu au chargement de la page */
+.navbar-collapse {
+    display: none;
+}
+
+/* Affiche le menu lorsque la classe 'show' est appliquée */
+.navbar-collapse.show {
+    display: block;
+}
+
+
+@keyframes grow {
+    from {
+        transform: scale(0,0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5,1.5);
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .container-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .statistiques, .video-container {
+        grid-column: 1 / -1;
+    }
+    .video {
+        margin: 6.5rem;
+    }
+
+    .first-stat, .second-stat, .first-solution, .second-solution, .third-solution, .fourth-solution {
+        text-align: center;
+    }
+
+    .first-percent, .second-percent {
+        font-size: 3rem;
+        color: rebeccapurple;
+    }
+
+    .harassment, .high-school-harassment {
+        font-size: 1.5rem;
+    }
+
+    .solutions {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(min-content, max-content);
+        gap: 3rem;
+
+    }
+
+    .first-solution, .second-solution, .third-solution, .fourth-solution {
+        margin: 1.5rem;
+    }
+    .illustrations {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 1100px) {
+    .carousel-container {
+        display: none;
+    }
+    .carousel-transition {
+        display: none;
+    }
+    .carousel-title {
+        display: none;
+    }
+}
